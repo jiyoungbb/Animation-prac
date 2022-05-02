@@ -1,7 +1,13 @@
-$('p').css({'display':'none'});
-$('.show-btn').click(function(){
-    $('p').css({'display':'block'});
+$('.menu li').mouseenter(function(){
+    $(this).children('.sub-menu').stop().slideDown();
 });
-$('.hide-btn').click(function(){
-    $('p').css({'display':'none'});
+
+$('.menu li').mouseleave(function(){
+    $(this).children('.sub-menu').stop().slideUp();
+});
+
+// btn
+$('.btn span').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
 });

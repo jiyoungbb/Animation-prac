@@ -1,0 +1,45 @@
+.menu{
+    padding: 0;
+    list-style: none;
+    width: 200px;
+}
+
+.menu > li > a{
+    background-color: #000;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.sub-menu{
+    border: 1px solid #000;
+    display: none;
+}
+
+.sub-menu a{
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+/* btn */
+
+.btn{
+    width: 300px;
+}
+
+.btn span{
+    background-color: #ccc;
+    padding: 5px;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn span.active{
+    background-color: #fff;
+    border: 1px solid #000;
+}
