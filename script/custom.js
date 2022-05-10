@@ -1,13 +1,9 @@
-$('.menu li').mouseenter(function(){
-    $(this).children('.sub-menu').stop().slideDown();
-});
+$('.btn li').click(function(){
+    $('.btn li').removeClass('active')
+    $(this).addClass('active')
 
-$('.menu li').mouseleave(function(){
-    $(this).children('.sub-menu').stop().slideUp();
-});
+    var num = $(this).attr('data-alt')
 
-// btn
-$('.btn span').click(function(){
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-});
+    $('.item').removeClass('active')
+    $('#' + num).addClass('active')
+})

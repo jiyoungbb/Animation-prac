@@ -7,53 +7,47 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/53bcbfc53b.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
-    <div class="items">
-        <div class="item">
-            <img src="/images/crew-01.jpg">
-            <div class="content">
-                <h2>Andrew Yu <span>Developer</span></h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro labore eius consequuntur quibusdam rerum molestiae?
-                </p>
-                <ul class="sns">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
+    <div class="wrap">
+        <div class="heading">
+            <h1><span>코딩웍스</span>, 프론트엔드 퍼블리셔 취업을 위한 실전 퍼블리싱 강좌</h1>
+            <input type="text" placeholder="What are you looking for?">
         </div>
-        <div class="item">
-            <img src="/images/crew-01.jpg">
-            <div class="content">
-                <h2>Andrew Yu <span>Developer</span></h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro labore eius consequuntur quibusdam rerum molestiae?
-                </p>
-                <ul class="sns">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="item">
-            <img src="/images/crew-01.jpg">
-            <div class="content">
-                <h2>Andrew Yu <span>Developer</span></h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro labore eius consequuntur quibusdam rerum molestiae?
-                </p>
-                <ul class="sns">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
+        <div class="tab-inner">
+            <ul class="btn">
+                <li data-alt="tab1" class="active">HTML5</li>
+                <li data-alt="tab2">CSS3</li>
+                <li data-alt="tab3">JQUERY</li>
+                <li data-alt="tab4">JAVASCRIPT</li>
+                <li data-alt="tab5">CSS FRAMNE</li>
+            </ul>
+            <div class="items">
+                <div class="item active" id="tab1">
+                    <h2>HTML5</h2>
+                    <img src="/images/platform-logo-01.png" >
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque vero cupiditate mollitia reprehenderit totam debitis itaque magnam provident recusandae consequuntur ut quos aperiam optio, vel amet nesciunt quo ipsa! Porro aperiam dolore pariatur eius quae totam quo nam, perspiciatis vero, assumenda cupiditate. Repellat ipsum itaque quo aut vitae cupiditate, quas porro sequi fugiat eligendi, veritatis odio, neque quae soluta inventore ea iure doloremque? Accusantium itaque ipsa quam expedita rem.
+                    </p>
+                </div>
+                <div class="item" id="tab2">
+                    <h2>CSS3</h2>
+                    <img src="/images/platform-logo-02.png" >
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque doloremque vero cupiditate mollitia reprehenderit totam debitis itaque magnam provident recusandae consequuntur ut quos aperiam optio, vel amet nesciunt quo ipsa! Porro aperiam dolore pariatur eius quae totam quo nam, perspiciatis vero, assumenda cupiditate. Repellat ipsum itaque quo aut vitae cupiditate, quas porro sequi fugiat eligendi, veritatis odio, neque quae soluta inventore ea iure doloremque? Accusantium itaque ipsa quam expedita rem.
+                    </p>
+                </div>
+                <div class="item" id="tab3">333</div>
+                <div class="item" id="tab4">444</div>
+                <div class="item" id="tab5">555</div>
             </div>
         </div>
     </div>
+
+    <script src="/script/jquery-3.6.0.min.js"></script>
+    <script src="/script/custom.js"></script>
 </body>
 
 </html>
