@@ -1,9 +1,10 @@
-$('.btn li').click(function(){
-    $('.btn li').removeClass('active')
-    $(this).addClass('active')
+$('.title').click(function(){
+	$(this).addClass('active')
+	$(this).siblings('.title').removeClass('active')
 
-    var num = $(this).attr('data-alt')
+	$(this).siblings('.desc').stop().slideUp()
+	$(this).next('.desc').stop().slideDown()
 
-    $('.item').removeClass('active')
-    $('#' + num).addClass('active')
+	var img = $(this).attr('data-img')
+	$('.imgae img').attr('src', img)
 })

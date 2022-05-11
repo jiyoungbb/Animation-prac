@@ -4,75 +4,103 @@
     margin: 0; padding: 0;
     text-decoration: none;
     list-style: none;
-    /* color: #000; */
+    color: #000;
+}
+
+html{
 }
 
 body{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     height: 100vh;
 }
+ section{
+ }
+ article{
+     width: 600px;
+ }
+ .heading{
+     text-align: center;
+ }
+ .heading p{
+     color: crimson;
+ }
+ .heading h2{
+     font-weight: normal;
+ }
+ .heading h2 em{
+     font-style: normal;
+ }
 
-.wrap{
-    width: 800px;
-    text-align: center;
-    background-color: #ddd;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.heading{}
-.heading h1{
-    font-size: 30px;
-}
-.heading h1 span{
-    color: crimson;
-}
-.heading input[type=text]{
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+ /* content */
+ .content{
+     width: 100%;
+     margin-top: 10px;
+     overflow: hidden;
+ }
 
-.tab-inner{
-    border: 1px solid reds;
-    margin-top: 30px;
-}
+ .accodian{
+     width: 50%;
+     float: left;
+ }
 
-.btn{
-    display: flex;
-}
-.btn li{
-    padding: 10px 25px;
-    border-top: 2px solid transparent;
-    background-color: #ededed;
-    border-right: 1px solid #ddd;
+ .accodian .title{
+     border: 1px solid #ededed;
+     padding: 3px;
+     padding-left: 10px;
+     font-size: 12px;
+     position: relative;
+    transition: 0.2s;
+    margin-bottom: 7px;
     cursor: pointer;
-}
-.btn li:hover,
-.btn li.active{
-    background-color: #fff;
-    border-top: 2px solid crimson;
+    color: #777;
+ }
+
+ .accodian .title::after{
+     content: '\f105';
+     font-family: fontawesome;
+     position: absolute;
+     right: 10px;
+     color: #999;
+     transition: 0.2s;
+ }
+
+ .accodian .title:hover::after{
+     color: #fff;
+ }
+ .accodian .title.active::after{
+    transform: rotate(90deg);
+    color: goldenrod;
+ }
+
+.accodian .title:hover,
+.accodian .title.active{
+    background-color: rgb(15, 15, 62);
+    color: #fff;
 }
 
-.items{}
-.item{
-    display: none;
-    height: 300px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-.item h2{
-    margin-bottom: 20px;
-}
-.item img{
-    float: left;
-    margin-right: 20px;
-}
-.item p{
-    text-align: justify;
-}
-.item.active{
-    display: block;
-    background-color: #fff;
-}
+ .accodian .desc{
+     font-size: 12px;
+     padding: 10px;
+     color: #777;
+ }
+
+ .accodian .desc{
+     display: none;
+ }
+
+ .accodian .desc.active{
+     display: block;
+ }
+
+.imgae{
+     float: right;
+     width: 50%;
+     text-align: center;
+ }
+
+ .imgae img{
+     width: 270px;
+ }
